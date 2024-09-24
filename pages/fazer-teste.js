@@ -39,7 +39,7 @@ export default function FazerTeste() {
         } else {
           router.push('/login');
         }
-      }, [])
+      }, [router])
     
 
     const insertData = async (e) => {
@@ -360,7 +360,7 @@ export default function FazerTeste() {
                         e) C++</label>
                 </div>
                 <div className='flex flex-col bg-gray-100 p-4 rounded-lg'>
-                    <p className='mb-3'>7 - Para que serve o comando "INSERT INTO" em SQL?</p>
+                    <p className='mb-3'>7 - Para que serve o comando &quot;INSERT INTO&quot; em SQL?</p>
                     <label>
                         <input type='radio'
                             name="7"
@@ -456,7 +456,7 @@ export default function FazerTeste() {
                         e) Dados.</label>
                 </div>
                 <div className='flex flex-col bg-gray-100 p-4 rounded-lg'>
-                    <p className='mb-3'>9 - Como podemos consultar todos os dados da tabela "alunos" em SQL?</p>
+                    <p className='mb-3'>9 - Como podemos consultar todos os dados da tabela &quot;alunos&quot; em SQL?</p>
                     <label>
                         <input type='radio'
                             name="9"

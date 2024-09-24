@@ -33,7 +33,7 @@ export default function Vencedor(){
         } else {
             router.push('/login');
         }
-    }, []);
+    }, [router]);
 
     return(
         <div className="flex flex-col p-16 py-4 w-full ">

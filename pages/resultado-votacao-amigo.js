@@ -34,7 +34,7 @@ export default function ResultadoAmigo() {
         } else {
             router.push('/login');
         }
-    }, [])
+    }, [router])
 
     return(
         <div className="flex flex-col px-16 py-4 h-screen w-full">

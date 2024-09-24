@@ -19,7 +19,7 @@ export default function Autenticar() {
     } else {
       router.push('/login');
     }
-  }, [])
+  }, [router])
 
   const insertData = async (e) => {
     e.preventDefault();

@@ -45,7 +45,7 @@ export default function Gabarito(){
         } else {
             router.push('/login');
         }
-    }, []);
+    }, [router]);
 
     return(
         <div className="flex flex-col p-16 py-4 w-full ">
@@ -111,7 +111,7 @@ export default function Gabarito(){
                         <p>Resposta certa: {correcao[5]}</p>
                     </div>
                     <div className={`${gabarito[0].resposta_7 === correcao[6] ? 'border-green-500' : 'border-red-500'} flex flex-col bg-gray-100 p-4 rounded-lg border-4 `}>
-                        <p className="mb-3">7- Para que serve o comando "INSERT INTO" em SQL?</p>
+                        <p className="mb-3">7- Para que serve o comando &quot;INSERT INTO&quot; em SQL?</p>
                         <p className={(gabarito[0].resposta_7 === "a" && gabarito[0].resposta_7 === correcao[6]) ? 'text-green-500' : (gabarito[0].resposta_7 === "a" && gabarito[0].resposta_7 !== correcao[6]) ? 'text-red-500' : 'text-black'}>a) Para deletar dados de uma tabela.</p>
                         <p className={(gabarito[0].resposta_7 === "b" && gabarito[0].resposta_7 === correcao[6]) ? 'text-green-500' : (gabarito[0].resposta_7 === "b" && gabarito[0].resposta_7 !== correcao[6]) ? 'text-red-500' : 'text-black'}>b) Para criar uma nova tabela.</p>
                         <p className={(gabarito[0].resposta_7 === "c" && gabarito[0].resposta_7 === correcao[6]) ? 'text-green-500' : (gabarito[0].resposta_7 === "c" && gabarito[0].resposta_7 !== correcao[6]) ? 'text-red-500' : 'text-black'}>c) Para inserir dados em uma tabela.</p>
@@ -129,7 +129,7 @@ export default function Gabarito(){
                         <p>Resposta certa: {correcao[7]}</p>
                     </div>
                     <div className={`${gabarito[0].resposta_9 === correcao[8] ? 'border-green-500' : 'border-red-500'} flex flex-col bg-gray-100 p-4 rounded-lg border-4 `}>
-                        <p className="mb-3">9- Como podemos consultar todos os dados da tabela "alunos" em SQL?</p>
+                        <p className="mb-3">9- Como podemos consultar todos os dados da tabela &quot;alunos&quot; em SQL?</p>
                         <p className={(gabarito[0].resposta_9 === "a" && gabarito[0].resposta_9 === correcao[8]) ? 'text-green-500' : (gabarito[0].resposta_9 === "a" && gabarito[0].resposta_9 !== correcao[8]) ? 'text-red-500' : 'text-black'}>a) SELECT * FROM alunos;</p>
                         <p className={(gabarito[0].resposta_9 === "b" && gabarito[0].resposta_9 === correcao[8]) ? 'text-green-500' : (gabarito[0].resposta_9 === "b" && gabarito[0].resposta_9 !== correcao[8]) ? 'text-red-500' : 'text-black'}>b) INSERT INTO alunos;</p>
                         <p className={(gabarito[0].resposta_9 === "c" && gabarito[0].resposta_9 === correcao[8]) ? 'text-green-500' : (gabarito[0].resposta_9 === "c" && gabarito[0].resposta_9 !== correcao[8]) ? 'text-red-500' : 'text-black'}>c) DELETE FROM alunos;</p>

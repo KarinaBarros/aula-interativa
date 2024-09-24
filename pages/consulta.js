@@ -18,7 +18,7 @@ export default function Consulta() {
         } else {
             router.push('/login');
         }
-    }, [])
+    }, [router])
 
     useEffect(() => {
         const ra = localStorage.getItem('ra');

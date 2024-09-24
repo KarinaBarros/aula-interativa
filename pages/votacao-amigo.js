@@ -55,7 +55,7 @@ export default function Amigo(){
         } else {
             router.push('/login');
         }
-    }, [votante_ra, token]);
+    }, [votante_ra, token, router]);
 
     
       const insertData = async (e) => {
