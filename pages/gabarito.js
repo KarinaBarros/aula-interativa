@@ -49,7 +49,7 @@ export default function Gabarito(){
 
     return(
         <div className="flex flex-col p-16 py-4 w-full ">
-            <div className={`${showRa} top-1/3 left-1/3 w-1/3 h-32`}>
+            <div className={`${showRa} top-1/3 left-1/3 w-1/3 h-32 z-20`}>
                 <Ra/>
             </div>
             <h1 className='mx-auto text-3xl font-poppins'>Gabarito</h1>

@@ -36,9 +36,8 @@ export default function Engracado(){
                             Authorization: `Bearer ${tokenStorage}`,
                         },
                     });
-                    console.log('Dados da API:', res.data); // Verifique o formato dos dados
-                console.log('Votante RA:', votante_ra); // Verifique o valor de votante_ra
-                    // Verifique se votante_ra tem um valor
+                    console.log('Dados da API:', res.data);
+                console.log('Votante RA:', votante_ra); 
                     if (votante_ra) {
                         const filteredItems = res.data.filter(item => item.ra.trim() !== votante_ra);
                         setAlunos(filteredItems);
@@ -82,7 +81,7 @@ export default function Engracado(){
 
     return(
         <div className="flex flex-col py-4 w-full">
-            <div className={`${showRa} top-1/3 left-1/3 w-1/3 h-32`}>
+            <div className={`${showRa} top-1/3 left-1/3 w-1/3 h-32 z-20`}>
                 <Ra/>
             </div>
             <h1 className='mx-auto text-3xl font-poppins'>Aluno mais engraçado</h1>

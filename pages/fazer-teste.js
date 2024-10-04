@@ -67,7 +67,7 @@ export default function FazerTeste() {
 
     return (
         <div className="flex flex-col py-4 w-full p-16">
-            <div className={`${showRa} top-1/3 left-1/3 w-1/3 h-32`}>
+            <div className={`${showRa} top-1/3 left-1/3 w-1/3 h-32 z-20`}>
                 <Ra />
             </div>
             <form onSubmit={insertData} className='flex flex-col gap-4'>
